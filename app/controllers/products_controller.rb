@@ -5,6 +5,7 @@ class ProductsController < ApplicationController
   # GET /products.json
   def index
     @products = Product.all
+    # @product_count = Product.distinct.count(:name)
   end
 
   # GET /products/1
